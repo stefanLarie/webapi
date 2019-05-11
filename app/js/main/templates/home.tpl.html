@@ -1,0 +1,18 @@
+<div>
+    <div class="input-group-prepend" >
+        <button type="button" class="btn btn-default" ng-click="mutariContent=false" aria-haspopup="true"
+            aria-expanded="false" style="width:50%">
+            <h1>tractari</h1>
+        </button>
+        <button type="button" class="btn btn-default" ng-click="mutariContent=true" aria-haspopup="true"
+            aria-expanded="false" style="width:50%">
+            <img src="https://i.ibb.co/DKNLKzg/58460556-445058676246355-8533092323335077888-n.jpg" >
+    </button>
+    </div>
+</div>
+<div class="jumbotron jumbotron-fluid">
+    <div ng-if="!mutariContent" ng-include="'js/main/content/transport.tpl.html'">
+    </div>
+    <div ng-if="mutariContent" ng-include="'js/main/content/mutari.tpl.html'">
+    </div>
+</div>
